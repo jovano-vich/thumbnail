@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jovani Thumbnail Designer </title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Favicon -->
+<link rel="icon" type="image/png" href="assets/profile.jpeg" />
+
+  <style>
+    body {
+      font-family: 'Arial Black', sans-serif;
+    }
+    .thumbnail {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .thumbnail:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(11, 255, 3, 0.959);
+    }
+    .nav-link:hover {
+      color: #f87171;
+      transition: color 0.3s ease;
+    }
+    .profile-pic {
+      transition: transform 0.4s ease;
+    }
+    .profile-pic:hover {
+      transform: scale(1.1) rotate(3deg);
+    }
+  </style>
+</head>
+<body class="bg-black text-white scroll-smooth">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 w-full bg-black bg-opacity-90 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-extrabold uppercase text-red-600">Jovano vich </h1>
+      <nav class="space-x-6">
+        <a href="#portfolio" class="nav-link font-bold">Portfolio</a>
+        <a href="#contact" class="nav-link font-bold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-32 px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
+        <img src="assets/thumb 1.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb 2.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb3.jpg" class="rounded-lg shadow-lg thumbnail" />
+      </div>
+      <h1 class="text-4xl md:text-5xl font-extrabold uppercase mb-6" >I Design Thumbnails That Get  Clicked. </h1>
+      <div class="flex justify-center space-x-4">
+        <a href="#portfolio" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-bold transition-all">View Portfolio</a>
+        <a href="#contact" class="bg-white text-black hover:bg-gray-200 px-6 py-3 rounded-md font-bold transition-all">Order Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me -->
+  <section class="py-16 px-4 bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <img src="assets/profile.jpeg" alt="Your Photo" class="mx-auto rounded-full w-40 h-40 mb-6 profile-pic border-4 border-red-600" />
+      <h2 class="text-3xl font-bold text-red-500 mb-4">About Me</h2>
+      <p class="text-lg text-gray-300">
+        I'm an experienced youtube thumbnail designer specializing in creating eye-catching YouTube thumbnails that increase your video's click-through rate (CTR) and attract more views. I use tools like Photoshop, Canva, and AI to craft high-performing visuals that stop the scroll.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 px-4">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-red-500 mb-8">Portfolio</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <img src="assets/thumb 4.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb5.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb 6.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb 7.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb 8.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb 9.jpg" class="rounded-lg shadow-lg thumbnail" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Before & After -->
+  <section class="py-16 px-4 bg-gray-900">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-red-500 mb-8">Before & After</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <img src="assets/thumb 10.jpg" class="rounded-lg shadow-lg thumbnail" />
+        <img src="assets/thumb 11.jpg" class="rounded-lg shadow-lg thumbnail" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 px-4 text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold text-red-500 mb-6">Contact Me</h2>
+      <p class="mb-4 text-gray-300">Ready to make thumbnails that get clicks? Let’s work together!</p>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="d8d4bcea-20b6-4f9b-a387-f254813aec46">
+        <input type="text" name="name" placeholder="Your Name" class="w-full px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-400" required>
+        <input type="email" name="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-400" required>
+        <textarea name="message" placeholder="Your Message" rows="5" class="w-full px-4 py-3 rounded-md bg-gray-800 text-white placeholder-gray-400" required></textarea>
+        <button type="submit" class="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md font-bold w-full transition-all">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-gray-500 text-sm py-8 bg-black">
+    <p>© 2025 Thumbnail Designer. All rights reserved.</p>
+    <p class="mt-2">
+      Designed by <a href="https://yourwebsite.com" class="text-red-500 hover:text-red-400 font-semibold">Jovano vich </a>
+    </p>
+  </footer>
+
+</body>
+</html>
